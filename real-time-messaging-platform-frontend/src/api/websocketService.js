@@ -19,12 +19,10 @@ export const connectWebSocket = (onConnected) => {
   });
 
   stompClient.onConnect = () => {
-    //console.log("WebSocket connected");
     if (onConnected) onConnected();
   };
 
   stompClient.onStompError = (frame) => {
-    //console.error("Broker error:", frame);
   };
 
   stompClient.activate();
@@ -32,15 +30,12 @@ export const connectWebSocket = (onConnected) => {
 
 export const subscribeToConversation = (conversationId, onMessageReceived) => {
   if (!stompClient || !stompClient.connected) {
-    //console.log("Conversation subscription skipped, socket not ready");
     return null;
   }
 
-  //console.log("Subscribed to conversation", conversationId);
 
   return stompClient.subscribe(`/topic/conversation/${conversationId}`, (message) => {
     const body = JSON.parse(message.body);
-    //console.log("Received conversation message", body);
     onMessageReceived(body);
   });
 };
@@ -63,11 +58,8 @@ export const subscribeToSidebarRefresh = (onSidebarMessage) => {
 
 export const sendWebSocketMessage = (conversationId, content) => {
   if (!stompClient || !stompClient.connected) {
-    //console.log("Cannot send, socket not connected");
     return;
   }
-
-  console.log("Sending message", { conversationId, content });
 
   stompClient.publish({
     destination: "/app/chat.send",
