@@ -73,43 +73,6 @@ body {
   overflow: hidden;
 }
 
-@media (max-width: 768px) {
-
-  .app-shell {
-    display: flex;
-    overflow-x: auto;
-    overflow-y: hidden;
-    scroll-snap-type: x mandatory;
-  }
-
-  .sidebar,
-  .chat-panel {
-    min-width: 100vw;
-    height: 100vh;
-    scroll-snap-align: start;
-  }
-
-  .sidebar {
-    border-right: none;
-  }
-
-  .chat-topbar {
-    padding: 12px 16px 0;
-  }
-
-  .chat-header.modern {
-    padding: 14px 16px;
-  }
-
-  .messages.modern {
-    padding: 16px;
-  }
-
-  .message-input.modern {
-    padding: 12px 16px 16px;
-  }
-
-}
 .sidebar {
   border-right: 1px solid var(--border);
   background: rgba(15, 23, 42, 0.88);
