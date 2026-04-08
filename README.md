@@ -1,6 +1,3 @@
-Here is a **professional README** you can directly use for your GitHub repo.
-It is written to **look strong for recruiters and portfolio reviewers**.
-
 ---
 
 # Pulse — Real-Time Messaging Platform
