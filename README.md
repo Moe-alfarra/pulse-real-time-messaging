@@ -6,14 +6,8 @@ Pulse is a full-stack real-time messaging platform that enables users to communi
 
 ## Live Demo
 
-Frontend:
+Hosted on Vercel:
 [https://pulse-real-time-messaging.vercel.app](https://pulse-real-time-messaging.vercel.app)
-
-Backend API:
-(Hosted on Railway)
-
-Database:
-(Hosted on Render)
 
 <img width="1916" height="857" alt="image" src="https://github.com/user-attachments/assets/21bd50bf-bfc2-41b4-88fe-9fc171a6fa7f" />
 <img width="1916" height="862" alt="image" src="https://github.com/user-attachments/assets/a8c7572d-a576-454a-a3f0-6602f7d3fa4c" />
